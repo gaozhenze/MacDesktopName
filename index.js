@@ -7,18 +7,18 @@ console.log(sysArgs);
 
 var fs = require('fs')
 var path = require('path')
-var Canvas = require('canvas')
+const { createCanvas, loadImage } = require('canvas')
+
 
 // 读图
-var img = new Canvas.Image();
-img.src = fs.readFileSync(imagePath);
+loadImage(imagePath).then((img) => {
 
 // 初始化画布
-var canvas = new Canvas(img.width, img.height);
+const canvas = createCanvas(img.width, img.height);
 var ctx = canvas.getContext('2d');
 
 // 画图
-ctx.drawImage(img, 0, 0, img.width, img.height);
+ctx.drawImage(img, 0, 0, img.width, img.height) 
 
 // 写字
 ctx.font = 'italic bold 200px pfennigFont';
@@ -32,3 +32,4 @@ if(!fs.existsSync(outputPath)){
 canvas.createJPEGStream().pipe(fs.createWriteStream(outputPath + '/' + text + '.jpg'));
 
 
+})

@@ -10,6 +10,7 @@ mac多桌面很赞
 在图片上写文字，并设置为各个桌面背景，可以更好区分
 
 ## 安装
+ * node-version: 8
  * git clone git@github.com:SoulRIver2015/MacDesktopName.git
  * brew install pkg-config cairo pango libpng jpeg giflib
  * npm install
@@ -26,3 +27,4 @@ mac多桌面很赞
 需要预装一些组件，node-canvas才能使用 
 mac的：brew install pkg-config cairo pango libpng jpeg giflib 
 详见github: https://github.com/Automattic/node-canvas
+
