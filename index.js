@@ -21,9 +21,9 @@ var ctx = canvas.getContext('2d');
 ctx.drawImage(img, 0, 0, img.width, img.height) 
 
 // 写字
-ctx.font = 'italic bold 200px pfennigFont';
+ctx.font = 'italic bold 100px pfennigFont';
 ctx.fillStyle = "#fff";
-ctx.fillText(text, 100, 300);
+ctx.fillText(text, 100, 200);
 
 // 保存磁盘
 if(!fs.existsSync(outputPath)){
