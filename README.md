@@ -11,7 +11,7 @@ mac多桌面很赞
 
 ## 安装
  * node-version: 8
- * git clone git@github.com:SoulRIver2015/MacDesktopName.git
+ * git clone git@github.com:gaozhenze/MacDesktopName.git
  * brew install pkg-config cairo pango libpng jpeg giflib
  * npm install
  * vim ~/.bash_profile
