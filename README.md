@@ -16,6 +16,8 @@ mac多桌面很赞
  * npm install
  * vim ~/.bash_profile
 添加一行 alias desktop_img="node /...path/MacDesktopName/index.js '[/imgfilepath/test/test.jpg]' '[/distpath/test]' "
+ * alias desktop_img="node /Users/gaozhenze/Github/MacDesktopName/index.js '/System/Library/Desktop Pictures/Yosemite 3.jpg' '/Users/gaozhenze/Documents/RIverOthers/screenimgs'"
+
  * source ~/.bash_profile
 
 ## 使用
